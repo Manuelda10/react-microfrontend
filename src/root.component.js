@@ -1,10 +1,13 @@
-import logo from "./assets/react.png";
+/* eslint-disable prettier/prettier */
+import {useState, useEffect, useRef} from 'react';
+import Header from "./components/Header";
+//import { processPDF, getFormattedInfo } from './utils/utils';
+import "./index.css";
 
 export default function Root(props) {
   return (
     <section>
-      <img src={logo} width={180} alt="react logo"></img>
-      <h1>Microfrontend inicial hecho con React.js</h1>
+      <Header />
     </section>
   );
 }
