@@ -33,6 +33,8 @@ module.exports = (webpackConfigEnv, argv) => {
       // eslint-disable-next-line prettier/prettier
       "react": "react",
       "react-dom": "react-dom",
+      "pdfjs-dist": "pdfjs-dist",
+      "canvas": "canvas",
     },
   });
 };

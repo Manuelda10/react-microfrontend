@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 import * as pdfjs from 'pdfjs-dist';
-//import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry';
+import pdfjsWorker from 'pdfjs-dist/build/pdf.worker.entry';
 
-//pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
+pdfjs.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 const processPDF = async (file) => {
   const arrayBuffer = await file.arrayBuffer();
