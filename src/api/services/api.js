@@ -5,7 +5,7 @@ import { formatDate } from "../../utils/utils";
 const API_URL = '/api/services';
 
 const getFilteredDocuments = async (filters) => {
-    const urlAPI = new URL('http://localhost:3000/api/services/document/filter');
+    const urlAPI = new URL('http://localhost:9000/api/services/document/filter');
 
     console.log('urlAPI: ', urlAPI)
     Object.keys(filters).forEach(key => urlAPI.searchParams.append(key, filters[key]));

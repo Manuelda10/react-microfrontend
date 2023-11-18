@@ -114,11 +114,11 @@ export default function Root(props) {
                   <td>{row.tipo_de_servicio}</td>
                   <td className='flex text-left'>
                     <a href={row.url_pdf} className='flex rounded-md bg-blue-500 text-white hover:bg-blue-700 px-3 py-1 m-1 ease-in duration-200 hover:cursor-pointer' >
-                      <img alt="Visualizar archivo"  src="/assets/view.svg" className="mr-1 w-20"/>
+                      <img alt="Visualizar archivo"  src={logo} className="mr-1 w-6"/>
                       Ver
                     </a>
                     <button onClick={e => handleDeleteDocument(row.id_documento)} className='flex rounded-md bg-red-500 text-white hover:bg-red-700 px-3 py-1 m-1 ease-in duration-200'>
-                      <img alt="Eliminar archivo"  src="/assets/delete.svg" className="mr-1 w-20" />
+                      <img alt="Eliminar archivo"  src={logo} className="mr-1 w-6" />
                       Eliminar
                     </button>
                   </td>
