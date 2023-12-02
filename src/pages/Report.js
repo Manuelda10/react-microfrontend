@@ -41,7 +41,7 @@ export default function Report(props) {
   return (
     <div className='flex justify-center items-center'>
       <div className='w-[80%] my-12'>
-        <h1 className='font-semibold text-2xl'>REPORTE</h1>
+        <h1 className='font-semibold text-2xl'>REPORTES</h1>
         <div className='bg-gray-200 py-2 my-4 flex'>
           <input value={departamento} onChange={(e) => setDepartamento(e.target.value)} type='search' placeholder='Departamento' alt='Departamento' className='border-solid border-2 border-gray-300 px-3 py-1 rounded-sm outline-none focus:border-blue-500 mx-2'></input>
           <button onClick={handleFilters} className='rounded-md px-4 bg-white text-gray-600 mx-2 hover:text-gray-900 ease-in duration-200'>
